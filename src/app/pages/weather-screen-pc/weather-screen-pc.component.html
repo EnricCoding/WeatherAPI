@@ -1,0 +1,53 @@
+
+<body>
+ 
+<div class="container">
+  <div class="input">
+    <mat-form-field class="example-form-field" >
+      <mat-label>Search some place... </mat-label>
+      <input matInput type="text" [(ngModel)]="value" >
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="resetInfo()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+      <button mat-button class="button-send" (click)="sendUbication()"> 
+          <i class="large material-icons color">send</i>
+      </button>
+  </div>
+  
+    <mat-card class="example-card">
+        <mat-card-header class="header">
+          <mat-card-title class="font-title" >The weather APP</mat-card-title>
+          <mat-card-subtitle class="font-subtitle" *ngIf="weatherLoaded" >{{weatherLocation.name}}</mat-card-subtitle>
+          <mat-card-subtitle class="font-subtitle-2" *ngIf="weatherLoaded" >{{weatherLocation.adminArea}}</mat-card-subtitle>
+        </mat-card-header>
+   
+        <figure  *ngIf="weatherLoaded">
+          <img *ngIf="weatherLoaded && cityTemperature <= 20" mat-card-image src="https://i.pinimg.com/originals/2b/e9/2a/2be92a362001824378ff7af9f4c52616.gif" class="img-weather">
+          <img *ngIf="weatherLoaded  && cityTemperature > 20" mat-card-image src="https://i.pinimg.com/originals/9d/72/5f/9d725fe7ec601fb2744d8d704f402a10.gif" class="img-weather">
+          <figcaption> {{cityTemperature}}ºC</figcaption>
+        </figure>
+
+        <mat-spinner  class="img-weather" *ngIf="loadingSpinner === true" >
+        </mat-spinner>
+
+        <img *ngIf="!weatherLoaded" mat-card-image src="https://i.pinimg.com/originals/c4/d1/c4/c4d1c4fa3377c2501c708171a292193a.gif" class="img-weather">
+           
+        <mat-card-content *ngIf="weatherLoaded">
+          <p class="center"  >
+            DETAILS
+          </p>
+         
+            <ul class="box"> 
+              <li> Feels like: <strong>{{weatherList?.feelsLikeTemp}}ºC </strong> </li>
+              <li> WindSpeed:  <strong> {{weatherList?.windSpeed}}%   </strong> </li>
+              <li> Cloudiness: <strong> {{weatherList?.cloudiness}}%  </strong> </li>
+              <li> Humidity:  <strong> {{weatherList?.relHumidity}}% </strong> </li>
+            </ul> 
+     
+        </mat-card-content>
+        <mat-card-actions>
+        </mat-card-actions>
+      </mat-card>
+  </div>
+</body>

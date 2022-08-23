@@ -1,0 +1,248 @@
+.example-card{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background-color: #585858;
+    opacity: 90%;
+    margin-top: 1%;
+    
+}
+
+
+.img-weather{
+    height: 50%;
+    width: 50%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.box li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    font-size: 1.4em;
+}
+
+.input{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 1em;
+    opacity: 90%;  
+}
+
+.color{
+    color: black;
+}
+
+.button-send{
+    padding: 5px;
+    background-color: whitesmoke;
+    margin-left: 2%;
+    border-radius: 12px;
+}
+
+.example-form-field {
+    width: 100%;
+   
+}
+
+
+.font-subtitle-2{
+    font-size: 1.4em;
+}
+
+.container{
+    padding-top: 5%;
+}
+
+body{
+    background-image: url('https://i.pinimg.com/originals/8b/ff/b5/8bffb53244f87958f62ed333b4651f91.gif');
+    height: 100%;
+    width: 100%;
+}
+
+
+.header{
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.font-title{
+    font-size: 2.2em;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+
+.font-subtitle{
+    padding: 5px;
+    padding-bottom: 15px;
+    font-size: 1.6em;
+}
+
+
+.center{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+figure {
+    border-radius: 15px;
+    position: relative
+}
+
+figcaption {
+    position: absolute;
+    width: 100%;
+    font-size: 3.5em;
+    text-align: center;
+    left: 0;
+    top: 0;
+    text-shadow: 0 0 1px white;
+    font-weight:bolder;
+    margin-top: 15%;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    
+    figcaption {
+        position: absolute;
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+        left: 0;
+        top: 0;
+        text-shadow: 0 0 1px white;
+        font-weight:bolder;
+        margin-top: 15%;
+    }
+
+
+}
+
+
+@media (min-width: 0px) and (max-width: 599px) {
+
+    
+    figcaption {
+        position: absolute;
+        width: 100%;
+        font-size: 1.4em;
+        text-align: center;
+        left: 0;
+        top: 0;
+        text-shadow: 0 0 1px white;
+        font-weight:bolder;
+        margin-top: 15%;
+    }
+
+    .font-title{
+        font-size: 1.5em;
+        padding: 5px;
+        font-weight: bolder;
+    }
+    
+    .font-subtitle-2{
+        font-size: 1.3em;
+    }
+    
+    
+.example-margin {
+    margin: 0 10px;
+  }
+    
+    .font-subtitle{
+        padding: 5px;
+        padding-bottom: 15px;
+        font-size: 1.4em;
+    }
+    
+    
+    .img-weather{
+        height: 70%;
+        width: 70%;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .box {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    .box li {
+        display: inline-block;
+       
+        padding: 10px;
+        font-size: 1.1em;
+    }
+
+    .example-card{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        background-color: #414a4c;
+        margin-top: 1%;
+        opacity: 90%;  
+    }
+    
+    .input{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        padding: 1em;
+        opacity: 90%;  
+      
+    }
+    
+        
+
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+}
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: rgb(153, 153, 255) !important;
+} 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: rgb(153, 153, 255) !important;
+}
